@@ -54,10 +54,14 @@ nav li {
 }
 
 /* Floate elementene i meny til høyre og venstre*/
-ul > li {
+ul {
+    display: block;
+}
+
+li {
     float: left;
 }
 
-ul > li.help-elements {
+li.help-elements {
     float: right;
 }
