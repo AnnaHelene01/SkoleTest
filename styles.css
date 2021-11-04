@@ -65,16 +65,3 @@ li.help-elements {
     width: 85px;
 }
 
-/* FOOTER TIL RAINY DAYS */
-footer {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    justify-content: center;
-    background-color: #113040;
-    color: #FFF;
-}
-
-/* Ordne font*/
-.text {
-    font-family: 'Montserrat', sans-serif;
-}
