@@ -65,17 +65,30 @@ li.help-elements {
     width: 85px;
 }
 
-/* FOOTER TIL RAINY DAYS */
-footer {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    justify-content: center;
-    background-color: #113040;
-    color: #FFF;
+/* FORSØK MENY TIL RESPONSIV*/
+#hamburger-menu {
+    display: none;
+    color: black;
+    float: right;
 }
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+/* nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: block;
+    padding: 20px 30px;
+} */
 
 /* LAGE MENYEN RESPONSIV*/
 @media (min-width: 400px){
+    nav > ul {
+        overflow: hidden;
 }
 
 @media (min-width: 600px){
@@ -83,4 +96,3 @@ footer {
 
 @media (min-width: 800px){
 }
-
