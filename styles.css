@@ -3,9 +3,10 @@
     margin: 0;
     padding-left: 2px;
     text-decoration: none;
+    background-color: rosybrown;
 }
 
-main {
+.menu_rainydays {
     display: grid;
     grid-template-columns: 1fr 7fr;
 }
@@ -19,6 +20,7 @@ main {
 
 /* Meny*/
 nav {
+    display: none;
     width: 100%;
     list-style: none;
     box-sizing: border-box;
@@ -65,11 +67,63 @@ li.help-elements {
     width: 85px;
 }
 
-/* FORSØK MENY TIL RESPONSIV*/
+/*_________Innhold på forside */ /* MAINPAIGE______________*/
+main {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.frontheader {
+    font-family: 'Federant', cursive;
+    font-size: 3.5em;
+    font-weight: 110;
+    text-align: center;
+}
+
+.flex-img {
+    display: flex;
+    margin: 0;
+}
+.flex-img > * {
+    flex: 50%;
+}
+
+.image-front {
+    max-width: 500px;
+}
+
+.flex-buttons_align2 {
+    
+}
+
+/* CTA KNAPPER PÅ FORSIDE*/
+.cta {
+    background-color: #0B7F99;
+    color: #FFF;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-large {
+    padding: 8px 20px;
+    font-size: 0,8em;
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 51.2px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.cta:hover {
+    color:rgba(255, 255, 255, .3)
+}
+
+/*______________ FORSØK MENY TIL RESPONSIV_________-*/
 #hamburger-menu {
     display: none;
-    color: black;
-    float: right;
 }
 
 #hamburger-menu:checked ~ nav {
@@ -89,10 +143,4 @@ nav li {
 @media (min-width: 400px){
     nav > ul {
         overflow: hidden;
-}
-
-@media (min-width: 600px){
-}
-
-@media (min-width: 800px){
 }
