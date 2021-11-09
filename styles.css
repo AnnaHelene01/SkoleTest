@@ -147,6 +147,10 @@ nav li {
 @media (min-width: 400px){
     nav > ul {
         overflow: hidden;
+    }
+    .products {
+     width: 100%;
+    }
 }
 
 @media (min-width: 800px) {
@@ -154,3 +158,28 @@ nav li {
     overflow: hidden;
 }
 }
+
+
+/* WOMEN PRODUKT*/
+.image-products {
+    height: 333.237px;
+}
+
+.products {
+    display: flex;
+}
+
+.products-img {
+    flex: 33.33%;
+}
+
+.products::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* .main {
+    max-width: 1000px;
+    margin: auto;
+} */
