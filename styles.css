@@ -3,7 +3,6 @@
     margin: 0;
     padding-left: 2px;
     text-decoration: none;
-    background-color: rosybrown;
 }
 
 .menu_rainydays {
@@ -93,7 +92,8 @@ main {
 }
 
 .flex-buttons_align2 {
-    
+    padding: 50px;
+    margin: 0px;
 }
 
 /* CTA KNAPPER PÅ FORSIDE*/
@@ -130,6 +130,10 @@ main {
     display: block;
 }
 
+.fa-bars {
+    color: black;
+}
+
 /* nav ul {
     padding: 0px;
 }
@@ -143,4 +147,10 @@ nav li {
 @media (min-width: 400px){
     nav > ul {
         overflow: hidden;
+}
+
+@media (min-width: 800px) {
+#hamburger-menu {
+    overflow: hidden;
+}
 }
