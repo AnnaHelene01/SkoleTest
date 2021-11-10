@@ -134,15 +134,6 @@ main {
     color: black;
 }
 
-/* nav ul {
-    padding: 0px;
-}
-
-nav li {
-    display: block;
-    padding: 20px 30px;
-} */
-
 /* LAGE MENYEN RESPONSIV*/
 @media (min-width: 400px){
     nav > ul {
@@ -161,10 +152,6 @@ nav li {
 
 
 /* WOMEN PRODUKT*/
-.image-products {
-    height: 333.237px;
-}
-
 .products {
     display: flex;
 }
@@ -179,7 +166,18 @@ nav li {
     display: table;
 }
 
-/* .main {
-    max-width: 1000px;
-    margin: auto;
-} */
+.img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* PRODUCT SPECIFIC SIDE*/
+.product-specific {
+    display: flex;
+}
+
+.product-specific > * {
+    flex: 50%;
+}
+
