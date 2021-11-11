@@ -245,12 +245,59 @@ select {
 }
 
 /* MY INFO WEBPAGE*/
+.myinfo-shoppingcart {
+   float: left;
+}
+
 .myinfo-container {
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
 }
 
 .myinfo-img {
     width:  100%;
     height: auto;
 }
+
+.myinformation {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+#email, 
+#name,
+#phone,
+#address {
+    padding: 6px;
+    margin: 5px;
+    width: 200px;
+}
+
+
+/* ORDER CONFIRMATION SIDE */
+.order-box {
+    width: 800px;
+    height: 600px;
+    background-color: #0B7F99;
+}
+
+.order-img {
+    width: 400px;
+    height: 300px;
+}
+
+.order-img-specific {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Order confirmation - button*/
+.myinfo-button {
+    width: 80px;
+    height: 60px;
+    background-color: #0B7F99;
+}
+
