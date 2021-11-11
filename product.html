@@ -11,8 +11,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Federant&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!--Over er linker til fonter jeg skal bruke-->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!--linker til noen av fontene jeg skal bruke-->
         <script src="https://kit.fontawesome.com/79f4911f4f.js" crossorigin="anonymous"></script> <!--Link til ikoner-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> <!--Link til fonten Montserrat!-->
     </head>
     <section class="menu_rainydays">
     <header>
@@ -33,30 +36,45 @@
     </div>
     </section>
     <body>
-        <section class="product-specific_img">
+        <main>
+          <section class="product-specific_img">
             <div>
-            <img src="images/mainpage/yellowjacket1.jpg">
+                <div class="product-container">
+            <img src="images/mainpage/yellowjacket1.jpg" class="product-img">
             <h2>Jacket name</h2>
-            <a href="" class="cta cta-large">Select size</a>
-            <a href="order.html" class="cta cta-large cta-small">Add to cart <i class="topnav-right fas fa-shopping-cart"></i></a>
+                </div>
+            <div class-="product-buttons_align"
+               <div class="custom-select">
+                <select name="choice">
+                  <option value="main" selected>SELECT SIZE</option>
+                    <option value="first">XS</option>
+                    <option value="second">S</option>
+                    <option value="third">M</option>
+                    <option value="fourth">L</option>
+                    <option value="fifth">XL</option>
+                  </select>
+               </div>
+            <a href="order.html" class="cta cta-small">Add to cart <i class="fas fa-shopping-cart fa-sm"></i></a>
             </div>
+              </div>
             <div class="product-specific_info">
                 <h3>Spesifikasjoner</h3>
-                <p>- Vekt: 150 g (str. S)
-                    - Passform: Normal
-                    - Vanntett/vannavvisende: Vannavvisende
-                    - Vindtett/vindavvisende: Vindavvisende
-                    - Pustende: Ja</p>
+                <p>- Vekt: 150 g (str. S)</p>
+                <p>- Passform: Normal</p>
+                <p>- Vanntett/vannavvisende: Vannavvisende</p>
+                <p>- Vindtett/vindavvisende: Vindavvisende</p>
+                <p>- Pustende: Ja</p>
                 <h3>Øvrige detaljer:</h3>
-                <p>- Hette: Fast, formsydd med avstivet brem
-                    - Lomme(r): Stor brystlomme i mesh
-                    - Ekstra lang og skråstilt lomme i front
-                    - Elastisk ermeavslutning
-                    - Formsydd albueparti
-                    - Enhånds elastisk snorstramming i nederkant
-                    - Forlenget ryggparti
-                    - Ingen sidesømmer</p>
+                <p>- Hette: Fast, formsydd med avstivet brem</p>
+                <p>- Lomme(r): Stor brystlomme i mesh</p>
+                <p>- Ekstra lang og skråstilt lomme i front</p>
+                <p>- Elastisk ermeavslutning</p>
+                <p>- Formsydd albueparti</p>
+                <p>- Enhånds elastisk snorstramming i nederkant</p>
+                <p>- Forlenget ryggparti</p>
+                <p>- Ingen sidesømmer</p>
             </div>
-        </section>
+          </section>
+        </main>
     </body>
     </html>

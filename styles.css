@@ -70,13 +70,13 @@ li.help-elements {
 main {
     max-width: 1000px;
     text-align: center;
+    margin: auto;
 }
 
 .frontheader {
     font-family: 'Federant', cursive;
     font-size: 3.5em;
     font-weight: 110;
-    text-align: center;
 }
 
 .flex-img {
@@ -91,6 +91,14 @@ main {
     max-width: 500px;
 }
 
+.align-img {
+    float: right;
+}
+
+.align-img-2 {
+    float: left;
+}
+
 .flex-buttons_align2 {
     padding: 50px;
     margin: 0px;
@@ -98,9 +106,10 @@ main {
 
 /* CTA KNAPPER PÅ FORSIDE*/
 .cta {
+    font-family: 'Montserrat', sans-serif;
     background-color: #0B7F99;
     color: #FFF;
-    font-size: 2em;
+    font-size: 1.5em;
     text-transform: uppercase;
     padding: 10px 80px;
     border-radius: 5px;
@@ -109,12 +118,16 @@ main {
 
 .cta-large {
     padding: 8px 20px;
-    font-size: 0,8em;
+    font-size: 2em;
     grid-column: 2;
     grid-row: 2;
     min-width: 51.2px;
     text-align: center;
     margin-top: 5px;
+}
+
+.cta-small {
+    padding: 8px 20px;
 }
 
 .cta:hover {
@@ -173,11 +186,55 @@ main {
 }
 
 /* PRODUCT SPECIFIC SIDE*/
-.product-specific {
+.product-specific_img {
     display: flex;
 }
 
-.product-specific > * {
+.product-specific_img > * {
     flex: 50%;
 }
 
+.product-container {
+    width: 550px;
+    height: 450px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Federant', cursive;
+    font-size: 2.5em;
+    font-weight: 110;
+}
+
+.custom-select {
+    font-family: 'Montserrat', sans-serif;
+}
+
+select {
+    padding: 12px 24px;
+    color: #FFF;
+    background-color: #0B7F99;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.25em;
+}
+
+.select:focus,
+.select:hover {
+    outline: none;
+    border: 1px solid #bbbbbb;
+}
+
+.product-buttons_align{
+    display: flex;
+    flex-direction: column;
+}
