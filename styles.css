@@ -237,4 +237,20 @@ select {
 }
 
 .product-buttons_align{
+    display: flex;
+}
+
+.product-buttons_align > * {
+    flex-direction: column;
+}
+
+/* MY INFO WEBPAGE*/
+.myinfo-container {
+    width: 250px;
+    height: 150px;
+}
+
+.myinfo-img {
+    width:  100%;
+    height: auto;
 }
