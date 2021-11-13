@@ -1,0 +1,29 @@
+/* ORDER CONFIRMATION SIDE */
+.order-box {
+    width: 1000px;
+    height: 400px;
+    background-color: #0B7F99;
+}
+
+.order-img {
+    width: 500px;
+    height: 400px;
+}
+
+.order-img-specific {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+}
+
+.order-text {
+    font-size: 2em;
+}
+
+/* Order confirmation - button*/
+.myinfo-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+}

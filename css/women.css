@@ -1,0 +1,20 @@
+/*WOMENS PAGE */
+.products {
+    display: flex;
+}
+
+.products-img {
+    flex: 33.33%;
+}
+
+.products::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}

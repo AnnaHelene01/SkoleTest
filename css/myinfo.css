@@ -1,0 +1,33 @@
+/* MY INFO WEBPAGE*/
+.myinfo-main {
+    
+}
+
+.myinfo-shoppingcart {
+   float: left;
+}
+
+.myinfo-container {
+    width: 350px;
+    height: 250px;
+}
+
+.myinfo-img {
+    width:  100%;
+    height: auto;
+}
+
+.myinformation {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+#email, 
+#name,
+#phone,
+#address {
+    padding: 6px;
+    margin: 5px;
+    width: 200px;
+}
