@@ -4,7 +4,7 @@
 }
 
 .products-img {
-    flex: 33.33%;
+    flex: 50%;
 }
 
 .products::after {
@@ -17,4 +17,14 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
+}
+
+@media (min-width: 480px) {
+    .products {
+        display: flex;
+    }
+    
+    .products-img {
+        flex: 33.33%;
+    }
 }

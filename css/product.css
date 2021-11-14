@@ -25,6 +25,7 @@ h2 {
 
 .custom-select {
     font-family: 'Montserrat', sans-serif;
+    margin: 20px;
 }
 
 select {
@@ -48,5 +49,5 @@ select {
 }
 
 .product-buttons_align > * {
-    flex-direction: column;
+    flex: 50%;
 }

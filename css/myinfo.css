@@ -1,4 +1,8 @@
 /* MY INFO WEBPAGE*/
+.my-info-align {
+    
+}
+
 .myinfo-shoppingcart {
    float: left;
 }
@@ -26,4 +30,6 @@
     padding: 6px;
     margin: 5px;
     width: 200px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
 }

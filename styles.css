@@ -73,12 +73,13 @@ li.help-elements {
 }
 
 /*_________Innhold på forside */ /* MAINPAIGE______________*/
-main {
+main { /* Sette max bredde på sidene med bruk av main*/
     max-width: 1000px;
     text-align: center;
     margin: auto;
 }
 
+/* Sette font og størrelse på h1 elementene jeg bruker på sidene*/
 .frontheader {
     font-family: 'Federant', cursive;
     font-size: 3.5em;
@@ -94,16 +95,19 @@ main {
 }
 
 .align-img {
-    float: right;
+    float: center;
+    margin: 5px;
+    padding: 5px;
 }
 
 .align-img-2 {
-    float: left;
+    float: center;
+    margin: 5px;
+    padding: 5px;
 }
 
 .flex-buttons_align2 {
     padding: 50px;
-    margin: 0px;
 }
 
 /* CTA KNAPPER PÅ FORSIDE*/
@@ -154,9 +158,6 @@ main {
     nav > ul {
         overflow: hidden;
     }
-    .products {
-     width: 100%;
-    }
 }
 
 @media (min-width: 800px) {
@@ -165,12 +166,21 @@ main {
 }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 800px) {
+    /* Sette de to bildene på forsiden i en flex på 50% hver*/
     .flex-img {
         display: flex;
         margin: 0;
     }
     .flex-img > * {
         flex: 50%;
+    }
+    /* Plassere de to bildene på dataskjerm */
+    .align-img {
+        float: right;
+    }
+    
+    .align-img-2 {
+        float: left;
     }
 }
