@@ -1,17 +1,46 @@
 /* MY INFO WEBPAGE*/
 .my-info-align {
-    
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.myinfo-header {
+    text-align: left;
 }
 
 .myinfo-shoppingcart {
-   float: left;
+   display: flex;
+   flex: 50%;
+   margin: 20px;
 }
 
+.myinfo-shoppingcart_productinfo {
+    margin: 20px;
+}
+
+select {
+    padding: 6px 20px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.25em;
+}
+
+.select:focus,
+.select:hover {
+    outline: none;
+    border: 1px solid #bbbbbb;
+}
+
+/* Lager en container med spesifik høyde og bredde*/
 .myinfo-container {
     width: 350px;
     height: 250px;
 }
 
+/* Plasserer bildet i containeren og setter 100% og auto for fullt og pent bilde*/
 .myinfo-img {
     width:  100%;
     height: auto;
@@ -21,8 +50,10 @@
     display: flex;
     flex-direction: column;
     float: left;
+    margin: 20px;
 }
 
+/* Fikse input feltet mitt med font, størrelse osv:*/
 #email, 
 #name,
 #phone,
@@ -32,4 +63,17 @@
     width: 200px;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Plassere siste "avsnitt/seksjon) på siden*/
+.myinfo-shipping {
+    float: left;
+    margin: 20px;
+}
+
+/* CTA buttons myinfo page */
+.myinfo-btn {
+    padding: 10px 40px;
+    font-size: 1em;
+    color: black;
 }
