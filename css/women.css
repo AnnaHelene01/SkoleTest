@@ -1,10 +1,9 @@
-/*WOMENS PAGE */
+/* WOMENS PAGE*/
 .products {
     display: flex;
     flex-wrap: wrap;
 }
-
-.products-img {
+.product-img {
     flex: 33.33%;
 }
 

@@ -51,3 +51,13 @@ select {
 .product-buttons_align > * {
     flex: 50%;
 }
+
+@media (max-width: 800px) {
+    .product-specific_img {
+        display: flex;
+    }
+
+    .product-specific_img > * {
+        flex: 100%;
+    }
+}
