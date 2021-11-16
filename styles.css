@@ -24,20 +24,24 @@ h3 {
 }
 
 /* Meny*/
+.hamburger {
+    float: right;
+}
+
 nav {
     display: none;
     width: 100%;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: none;
 }
 
 nav > ul {
     align-items: center;
     background-color: #113040;
     padding: 25px;
-    margin: 0;
-    width: 100%;
-    height: 45px;
+    margin: 10px;
+    width: 150px;
+    height: 240px;
 }
 
 nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer brukervennlighet*/
@@ -45,8 +49,8 @@ nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer bruke
 }
 
 nav li {
-    display: inline-block;
-    width: 150px;
+    display: 
+    width: 50px;
 }
 
 .menu-elements {
@@ -68,8 +72,8 @@ nav li {
 
 /* Floate help-elementene i meny til høyre*/
 li.help-elements {
-    float: right;
     width: 85px;
+    padding: 5px;
 }
 
 /*_________Innhold på forside */ /* MAINPAIGE______________*/
@@ -154,18 +158,6 @@ main { /* Sette max bredde på sidene med bruk av main*/
 }
 
 /* LAGE MENYEN RESPONSIV*/
-@media (min-width: 400px){
-    nav > ul {
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 800px) {
-#hamburger-menu {
-    overflow: hidden;
-}
-}
-
 @media (min-width: 800px) {
     /* Sette de to bildene på forsiden i en flex på 50% hver*/
     .flex-img {
@@ -182,5 +174,41 @@ main { /* Sette max bredde på sidene med bruk av main*/
     
     .align-img-2 {
         float: left;
+    }
+ 
+    /* Få hamburger ikon til å forsvinne*/
+    #hamburger-menu{
+        display: none;
+        overflow: hidden;
+    }
+
+    /*GJØRE MENY RESPONSIV FORSØK: */
+    nav {
+        display: none;
+        width: 100%;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    nav > ul {
+        align-items: center;
+        background-color: #113040;
+        padding: 25px;
+        margin: 0;
+        width: 100%;
+        height: 45px;
+    }
+    
+    nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer brukervennlighet*/
+        background-color: rgba(255, 255, 255, .3)
+    }
+    
+    nav li {
+        display: inline-block;
+        width: 150px;
+    }
+    li.help-elements {
+        float: right;
+        width: 85px;
     }
 }
