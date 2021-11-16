@@ -67,7 +67,11 @@ select {
 
 /* Plassere siste "avsnitt/seksjon) på siden*/
 .myinfo-shipping {
-    float: left;
+    text-align: left;
+    margin: 20px;
+}
+
+.myinfo-cta {
     margin: 20px;
 }
 
