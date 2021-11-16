@@ -48,11 +48,6 @@ nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer bruke
     background-color: rgba(255, 255, 255, .3)
 }
 
-nav li {
-    display: 
-    width: 50px;
-}
-
 .menu-elements {
     font-family: 'Pacifico', cursive;
     color: #FFF;
