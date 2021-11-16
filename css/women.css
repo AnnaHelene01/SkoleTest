@@ -1,10 +1,11 @@
 /*WOMENS PAGE */
 .products {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .products-img {
-    flex: 50%;
+    flex: 33.33%;
 }
 
 .products::after {
@@ -19,12 +20,12 @@
     object-fit: cover;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 800px) {
     .products {
         display: flex;
     }
     
     .products-img {
-        flex: 33.33%;
+        flex: 100%;
     }
 }

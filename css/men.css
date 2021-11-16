@@ -19,7 +19,7 @@
     object-fit: cover;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     .products {
         display: flex;
     }

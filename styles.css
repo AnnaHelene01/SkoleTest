@@ -32,6 +32,10 @@ h3 {
     padding: 10px;
 }
 
+label[for="hamburger-menu"] {
+    display: none;
+}
+
 nav {
     display: block;
     width: 100%;
@@ -144,9 +148,6 @@ main { /* Sette max bredde på sidene med bruk av main*/
 }
 
 /*______________ FORSØK MENY TIL RESPONSIV_________-*/
-#hamburger-menu {
-    display: none;
-}
 
 #hamburger-menu:checked ~ nav {
     display: block;
@@ -180,12 +181,29 @@ main { /* Sette max bredde på sidene med bruk av main*/
     display: block;
 }
 
-    #hamburger-menu{
-        display: none;
-        overflow: hidden;
-    }
+#hamburger-menu:checked ~ nav {
+    display: block; /* Få fram nav når checkbox er checked*/
+}
+
+label[for=hamburger-menu] {
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    right: 0px;
+    top: 10px;
+}
+
+
 
     /*GJØRE MENY RESPONSIV FORSØK: */
+header nav ul li {
+    float: none;
+}
+
+header nav ul li a {
+    width: 100%;
+}
+
     nav {
         display: none;
         width: 100%;
