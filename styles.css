@@ -1,15 +1,16 @@
-p,
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-}
-
+/* FORSIDE RAINY DAYS*/
 /* Forsøk på å lage grid, et område til img/logo og en til selve meny*/
 * {
     margin: 0;
     padding-left: 2px;
     text-decoration: none;
 }
+
+p,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}    
 
 .menu_rainydays {
     display: grid;
@@ -25,11 +26,14 @@ h3 {
 
 /* Meny*/
 .hamburger {
+    display: none;
     float: right;
+    margin: 10px;
+    padding: 10px;
 }
 
 nav {
-    display: none;
+    display: block;
     width: 100%;
     list-style: none;
     box-sizing: none;
@@ -152,7 +156,7 @@ main { /* Sette max bredde på sidene med bruk av main*/
     color: black;
 }
 
-/* LAGE MENYEN RESPONSIV*/
+/* LAGE SIDEN RESPONSIV*/
 @media (min-width: 800px) {
     /* Sette de to bildene på forsiden i en flex på 50% hver*/
     .flex-img {
@@ -172,6 +176,10 @@ main { /* Sette max bredde på sidene med bruk av main*/
     }
  
     /* Få hamburger ikon til å forsvinne*/
+.hamburger {
+    display: block;
+}
+
     #hamburger-menu{
         display: none;
         overflow: hidden;
@@ -192,10 +200,6 @@ main { /* Sette max bredde på sidene med bruk av main*/
         margin: 0;
         width: 100%;
         height: 45px;
-    }
-    
-    nav a:hover { /* Sette bakgrunnsfarge når musen er over elementer for mer brukervennlighet*/
-        background-color: rgba(255, 255, 255, .3)
     }
     
     nav li {
