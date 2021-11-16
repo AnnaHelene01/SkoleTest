@@ -1,9 +1,9 @@
 /* MENS PAGE*/
 .products {
     display: flex;
+    flex-wrap: wrap;
 }
-
-.products-img {
+.product-img {
     flex: 33.33%;
 }
 
@@ -17,4 +17,14 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
+}
+
+@media (min-width: 800px) {
+    .products {
+        display: flex;
+    }
+    
+    .products-img {
+        flex: 100%;
+    }
 }
