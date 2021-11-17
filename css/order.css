@@ -3,6 +3,11 @@
     width: 1000px;
     height: 400px;
     background-color: #0B7F99;
+    display: flex;
+}
+
+.order-box > div {
+    flex: 50%;
 }
 
 .order-img {
@@ -21,9 +26,31 @@
     font-size: 2em;
 }
 
-/* Order confirmation - button*/
-.myinfo-btn {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: black;
+.order-info {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
 }
+
+.order-row {
+    height: 150px;
+    width: 150px;
+}
+
+.size {
+    background-color: #aaa;
+}
+
+.amount {
+    background-color: #bbb;
+}
+
+/* Få flexboxen til at hver div tar opp 100% på mobil skjerm */
+@media (max-width: 800px) {
+    .order-box > div {
+        flex: 100%;
+    }
+}
+
+
+
