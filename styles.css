@@ -10,7 +10,13 @@ p,
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-}    
+}   
+
+.footer-header{
+    font-family: 'Federant', cursive;
+    font-size: 2em;
+    font-weight: 20;
+}
 
 .menu_rainydays {
     display: grid;
@@ -147,11 +153,79 @@ main { /* Sette max bredde på sidene med bruk av main*/
     color:rgba(255, 255, 255, .3)
 }
 
+
+/* FOOTER TIL RAINY DAYS */
+/* Plassere de tre fractions i grid*/
+
+footer {
+    display: grid;
+    grid-template-rows: auto;
+    background-color: #113040;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+}
+footer > .grid-footer {
+    display: grid;
+    grid-template-columns: 333.33px;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Ordne font*/
+.text {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+/* CTA-ene i footer:*/
+.cta-footer {
+    background-color: #0B7F99;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 10px; 
+    grid-row: 2;
+    min-width: 50px;
+    margin-top: 0px;
+}
+
+.cta-footer:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+/* Mail CTA*/
+.footer-cta {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-phone-alt,
+.fa-envelope {
+    font-size: 1em;
+}
+
+.email-align {
+    display: flex;
+}
+
+#email-footer {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.footer-app {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
 /*______________ FORSØK MENY TIL RESPONSIV_________-*/
 
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
 
 .fa-bars {
     color: black;
@@ -177,6 +251,10 @@ main { /* Sette max bredde på sidene med bruk av main*/
     }
  
     /* Få hamburger ikon til å forsvinne*/
+    #hamburger-menu:checked ~ nav {
+        display: block;
+    }
+
 .hamburger {
     display: block;
 }
@@ -193,14 +271,12 @@ label[for=hamburger-menu] {
     top: 10px;
 }
 
-
-
     /*GJØRE MENY RESPONSIV FORSØK: */
-header nav ul li {
+nav ul li {
     float: none;
 }
 
-header nav ul li a {
+nav ul li a {
     width: 100%;
 }
 
@@ -225,7 +301,15 @@ header nav ul li a {
         width: 150px;
     }
     li.help-elements {
-        float: right;
+        float: none;
         width: 85px;
     }
-}
+/* Gjøre footer responsiv ved å sette grid til 1 fr auto nedover:*/
+    footer {
+        grid-template-rows: auto  auto auto;
+    }    
+    
+    footer > .grid-footer {
+            grid-template-columns: 333.33px 333.33px 333.33px;
+        }
+    }
