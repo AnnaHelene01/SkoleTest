@@ -55,9 +55,11 @@ select {
 @media (max-width: 800px) {
     .product-specific_img {
         display: flex;
+        flex-wrap: wrap;   
     }
-
-    .product-specific_img > * {
-        flex: 100%;
+    
+    .product-specific_info {
+        padding: 10px;
+        margin: 10px;
     }
 }
